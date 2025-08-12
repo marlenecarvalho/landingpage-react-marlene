@@ -1,15 +1,22 @@
 import React from 'react'
+import { FaWhatsapp } from 'react-icons/fa'
+
 
 export default function Navbar() {
   return (
-    <nav className="bg-purple-700 text-white shadow-md">
-      {/* <input 
-      type="nome" 
-      placeholder="Digite seu nome"
-      className='flex flex-col sm:flex-row items-center gap-2 p-3 rounded-lg shadow-md border' />
-       */}
-      <div className="max-w-7xl mx-auto flex flex-col items-center space-y-4">
-        <h1 className="text-2xl font-bold">Marlene Carvalho</h1>
+    <nav className="bg-white text-black shadow-md">
+      <div className=" flex flex-col items-center p-4">
+        <div className='right-7'>
+            <a
+      href="https://wa.me/5581992164994?text=Olá%20Marlene,%20quero%20conversar!"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed top-4 right-4 z-50 text-green-500 hover:text-green-400 text-4xl transition duration-300"
+      title="Fale comigo no WhatsApp"
+    >
+      <FaWhatsapp />
+    </a>
+        </div>
         <ul className="flex space-x-50 text-lg">
           <li>
             <a href="/" className="hover:text-yellow-400 transition-colors">
